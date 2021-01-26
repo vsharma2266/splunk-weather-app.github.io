@@ -1,0 +1,94 @@
+.loading {
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw; }
+
+.weather-widget {
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 3px #e4dfdf, 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+  margin: auto;
+  max-width: 800px;
+  padding: 24px; }
+  .weather-widget .weather-widget-weather-conditions > div {
+    display: inline-block;
+    width: 50%; }
+  @media (max-width: 768px) {
+    .weather-widget .weather-widget-weather-conditions .weather-widget-conditions {
+      text-align: right; }
+      .weather-widget .weather-widget-weather-conditions .weather-widget-conditions p {
+        font-size: 1em; } }
+  .weather-widget .weather-widget-current-weather {
+    display: flex;
+    justify-items: center;
+    margin-top: 24px; }
+    .weather-widget .weather-widget-current-weather .weather-widget-icon {
+      margin-right: 8px; }
+  .weather-widget .weather-widget-daily-weather {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 32px;
+    overflow: auto; }
+    @media (max-width: 768px) {
+      .weather-widget .weather-widget-daily-weather {
+        justify-content: flex-start; }
+        .weather-widget .weather-widget-daily-weather .daily-weather-container {
+          margin-right: 8px; } }
+
+.daily-weather-container {
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #ecdcdc;
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+  padding: 4px;
+  transition: all 0.25s ease-in-out; }
+  .daily-weather-container:hover {
+    box-shadow: inset 0 0 0 1px #000; }
+
+.location-color {
+  color: #4d4343; }
+
+.location-address {
+  font-size: 2em; }
+
+.location-time {
+  font-size: 1.25em; }
+
+.location-weather {
+  font-size: 1.25em; }
+
+.conditions-container > p {
+  color: #4d4343;
+  font-size: 1.25em;
+  margin: 0 0 8px; }
+
+.temp-container {
+  display: flex; }
+
+.temp-number {
+  color: #000;
+  font-size: 48px; }
+
+.temp-scale {
+  display: flex;
+  font-size: 14px;
+  margin-left: 4px; }
+  .temp-scale .temp-divider {
+    margin: 0 4px; }
+  .temp-scale a {
+    text-decoration: none; }
+    .temp-scale a:hover, .temp-scale a:focus {
+      outline: 1px solid;
+      outline-offset: 2px; }
+
+.weather-icon {
+  height: 54px; }
+
+
+/*# sourceMappingURL=app.de64fa02.css.map*/
